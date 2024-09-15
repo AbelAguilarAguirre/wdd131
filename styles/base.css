@@ -1,0 +1,166 @@
+:root {
+    --dark-1: #0C1618;
+    --light-1: #C6CAED;
+    --dark-2: #004643;
+    --light-2: #FFFFF9;
+}
+h1, h2, h3 {
+    font-family: 'VT323', monospace;
+    font-weight: 200;
+    font-style: normal;
+    font-size: 3em;
+}
+h2, h3 {
+    font-size: 2.5em;
+}
+p {
+    font-family: "Reddit Mono", monospace;
+    font-weight: 400;
+    font-style: normal;
+}
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    margin: 0;
+    padding: 0;
+}
+
+header h1 {
+    color: var(--light-1);
+    background-color: var(--dark-1); 
+    margin: 0; 
+    padding: 20px; 
+    text-align: center;
+}
+
+nav {
+    margin: 0;
+    padding: 0; 
+    background-color: var(--dark-2);
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 10px;
+    margin: 0;
+    display: flex;
+    justify-content: space-around;
+    text-decoration: none; 
+    flex-flow: row wrap;
+    gap: 10px;
+}
+.container {
+    display:grid;
+    align-self:center;
+    height: 93%;
+}
+.container ul {
+    align-self: center;
+}
+.card li {
+    padding: 10px;
+}
+
+nav li {
+    margin-right: 10px;
+    padding: 0;
+    font-size: 18px;
+    border-radius: 10px;
+    transition: 0.5s;
+    background-color: var(--dark-1);
+}
+
+nav a {
+    display: block;
+    padding: 20px 40px;
+    color: var(--light-1);
+    text-decoration: none;
+    transition: 0.5s;
+    border-radius: 10px;
+}
+nav a:hover {
+    background-color: var(--light-1);
+    color: var(--dark-1);
+    transition: 0.5s;
+    border-radius: 10px;
+}
+main {
+    display: flex;
+    max-width: 1500px;
+    margin: 0 auto;
+    flex-wrap: wrap;
+    background-color: var(--light-2);
+}
+
+.card {
+    background-color: var(--light-2);
+    border: 2px solid var(--light-1);
+    margin: 20px;
+    border-radius: 25px;
+}
+
+.card:first-child {
+    flex: 2;
+}
+
+.card:last-child {
+    flex: 1;
+}
+.card h3 {
+    color: var(--dark-2);
+    margin: 0;
+    padding: 20px 20px 0 20px ;
+    border-radius: 20px 20px 0px 0px;
+    text-align: center;
+}
+.card h2 {
+    background-color: var(--light-1);
+    color: var(--dark-1);
+    margin: 0;
+    padding: 20px;
+    border-radius: 20px 20px 0px 0px;
+    text-align: center;
+}
+.sidebyside {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    margin: 20px;
+}
+.sidebysidewrap {
+    display: grid;
+    margin: 20px;
+    grid-template-rows: 1fr 1fr;
+}
+img {
+    border-radius: 3px;
+    box-shadow: 5px 5px 20px color(--light-1);
+    max-height: 100%;
+    justify-self: center;
+    width: auto;
+    align-self: center;
+}
+figure {
+    
+    justify-self: center;
+}
+p {
+    padding: 20px;
+}
+hr {
+    border: 1px solid color(--dark-2);
+    margin: 5px 30px;
+}
+footer {
+    background-color: var(--dark-1);
+    color: var(--light-1);
+    padding: 10px 30px;
+    text-align: center;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
