@@ -25,6 +25,13 @@
     figure {
         width: 100%;
         height: auto;
-        max-width: 450px;
+    }
+    .templecards {
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 1rem;
+    }
+    main {
+        max-width: 1200px;
+        margin: 10px auto;
     }
 }
