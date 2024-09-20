@@ -64,17 +64,10 @@ footer {
     max-width: 63px;
     margin: 0 auto;
 }
-.navigation li:hover:nth-child(odd) {
-    transition: 0.5s;
-    border-radius: 5px;
-}
-.navigation li:hover:nth-child(even) {
-    transition: 0.5s;
-    border-radius: 5px;
-}
 .navigation li a:hover {
     background-color: var(--medium);
     color: var(--dark);
+    transform: scale(1.1);
 }
 .navigation {
     list-style: none;
@@ -96,7 +89,7 @@ footer {
     background-color: var(--dark);
     color: var(--light);
     transition: 0.5s;
-    scale: 1.1;
+    transform: scale(1.1);
 }
 
 /* Temple Card */
