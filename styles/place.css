@@ -55,6 +55,7 @@ li {
 img {
     width: 100%;
     height: auto;
+    max-width: 800px;
 }
 
 .weatherIcon img {
@@ -64,7 +65,7 @@ img {
     padding: 10px;
 }
 
-@media only screen and (min-width: 830px) {
+@media only screen and (min-width: 1000px) {
     main {
         grid-template-columns: repeat(3, 1fr);
         padding: 0;
