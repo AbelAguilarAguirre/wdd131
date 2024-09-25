@@ -98,7 +98,7 @@ img {
     .weather h2,
     .weatherIcon,
     .data h2 {
-        background-color: var(--dark-2);
+        background-color: var(--light-1);
     }
     .weather h2,
     .weatherIcon {
@@ -112,7 +112,7 @@ img {
     }
     .weather h2::after {
         display: inline-block;
-        content: url("../images/sunny.svg");
+        content: "☀️";
         width: 50px;
         height: 100%;
         margin-left: 20px;
