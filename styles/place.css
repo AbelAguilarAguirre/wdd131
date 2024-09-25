@@ -96,12 +96,10 @@ img {
         margin-bottom: 20px;
     }
     .weather h2,
-    .weatherIcon,
     .data h2 {
         background-color: var(--light-1);
     }
-    .weather h2,
-    .weatherIcon {
+    .weather h2 {
         max-height: 80px;
     }
     .weather h2,
@@ -111,11 +109,8 @@ img {
         padding: 10px 10px 10px 40px;
     }
     .weather h2::after {
-        display: inline-block;
         content: "☀️";
-        width: 50px;
-        height: 100%;
-        margin-left: 20px;
+        margin-left: 10px;
     }
     .weatherIcon img {
         display: none;
