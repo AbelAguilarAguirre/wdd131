@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Place: Kauai - Abel Antonio Ulysses Aguilar Aguirre</title>
+    <meta name="description"
+        content="This is the 3rd week project for WDD 131 - Dynamic Web Fundamentals by Abel Antonio Ulysses Aguilar Aguirre. This page will be W03 Assignment.">
+    <meta name="author" content="Abel Antonio Ulysses Aguilar Aguirre">
+    <link rel="stylesheet" href="styles/place.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Roboto&display=swap" rel="stylesheet">
+    <script src="scripts/place.js" defer></script>
+    <script src="scripts/getdates.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <h1>Kauai, Hawaii</h1>
+    </header>
+    <main>
+        <div class="hero">
+            <picture>
+                <source media="(min-width: 1000px)" srcset="/images/place-large.webp">
+                <img src="/images/place-small.webp" alt="Laie Temple Hawaii">
+            </picture>
+        </div>
+        <div class="data">
+            <h2>Data</h2>
+            <ul>
+                <li>
+                    <p>Area: 562.3 sq mi</p>
+                </li>
+                <li>
+                    <p>Population: 73,919</p>
+                </li>
+                <li>
+                    <p>Main City: Lihue</p>
+                </li>
+                <li>
+                    <p>Language: English</p>
+                </li>
+                <li>
+                    <p>Currency: USD</p>
+                </li>
+                <li>
+                    <p>Time Zone: UTC-10:00</p>
+                </li>
+            </ul>
+        </div>
+        <div class="weather">
+            <h2>Weather</h2>
+            <span class="weatherIcon">
+                <img src="/images/sunny.svg" alt="Sunny">
+            </span>
+            <ul>
+                <li>
+                    <p>Temperature: <span class="temp">70</span>°F</p>
+                </li>
+                <li>
+                    <p>Conditions: Clear</p>
+                </li>
+                <li>
+                    <p>Wind: <span class="windSpeed">14</span> mph</p>
+                </li>
+                <li>
+                    <p>Wind Chill: <span class="windChill"></span></p>
+                </li>
+            </ul>
+        </div>
+    </main>
+    <footer>
+        <p>&copy;<span id="currentyear"></span> - Abel Antonio Ulysses Aguilar Aguirre - Kauai</p>
+        <p>Last Modified: <span id="lastModified"></span></p>
+    </footer>
+</body>
+
+</html>
