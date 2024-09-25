@@ -56,6 +56,7 @@ img {
     width: 100%;
     height: auto;
     max-width: 800px;
+    margin: 0 auto;
 }
 
 .weatherIcon img {
@@ -115,5 +116,8 @@ img {
     }
     .weatherIcon img {
         display: none;
+    }
+    img {
+        max-width: 1200px;
     }
 }
