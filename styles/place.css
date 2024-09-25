@@ -52,13 +52,13 @@ li {
     padding: 5px;
 }
 picture {
-    margin: 0 auto;
+    width: 100%;
+    height: 100%;
 }
 img {
     width: 100%;
     height: auto;
     max-width: 800px;
-    margin: 0 auto;
 }
 
 .weatherIcon img {
@@ -66,6 +66,9 @@ img {
     width: 100vw;
     height: 80px;
     padding: 10px;
+}
+.hero {
+    place-self: center;
 }
 
 @media only screen and (min-width: 1000px) {
@@ -81,6 +84,7 @@ img {
     .hero {
         grid-column: 1/5;
         grid-row: 1/5;
+        place-self: auto;
     }
     .data {
         grid-column: 1/2;
