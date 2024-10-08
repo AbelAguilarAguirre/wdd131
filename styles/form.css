@@ -18,15 +18,28 @@ body {
 }
 
 form {
-    display: grid;
-    gap: 20px;
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1);
+    margin: 0 auto;
+    width: 80%;
+
+    margin-top: 20px;
+    background-color: white;
+    max-width: 800px;
 }
 
 form label {
-    color: var(--dark-1);
+    font-weight: 700;
+    font-size: 1.2rem;
+    margin: 0;
+    padding: 0;
+    display: block;
+}
+
+form input[type="checkbox"] {
+    width: 20px;
+    height: 20px;
 }
 
 form input[type="text"],
@@ -86,15 +99,11 @@ form textarea {
     margin: 0 auto;
     border-radius: 5px;
 }
-
-.features {
-    display: flex;
-    gap: 20px;
-    flex-direction: column;
-}
-
-button {
+button p {
     padding: 10px;
+}
+button p,
+button {
     background-color: var(--dark-2);
     color: var(--dark-1);
     border: none;
@@ -107,7 +116,8 @@ button {
     height: 50px;
 }
 
-button:hover {
+button:hover,
+button p:hover {
     background-color: var(--dark-1);
     color: var(--light-1);
     transition: ease-in-out 0.3s;
@@ -138,6 +148,6 @@ main {
     grid-template-columns: 1fr;
     gap: 20px;
     padding-bottom: 20px;
-    max-width: 740px;
-    margin: 10px auto;
+    margin: 0px auto;
+    background-color: var(--light-2);
 }
