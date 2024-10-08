@@ -9,6 +9,9 @@
     <meta name="description"
         content="This is the fifth week project for WDD 131 - Dynamic Web Fundamentals by Abel Antonio Ulysses Aguilar Aguirre. This page will be the Product Review Form.">
     <meta name="author" content="Abel Antonio Ulysses Aguilar Aguirre">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Roboto&display=swap" rel="stylesheet">
     <script src="scripts/form.js" defer></script>
     <script src="scripts/getdates.js" defer></script>
 </head>
@@ -20,13 +23,13 @@
     <main>
         <form action="review.html" method="get">
             <label for="prodName">
-                Product Name:
+                <p>Product Name:</p>
                 <select name="prodName" id="prodName" required>
                     <option value="" disabled selected>Select a Product</option>
                 </select>
             </label>
             <label class="ratingBox" for="rating">
-                Overall Rating:
+                <p>Overall Rating:</p>
                 <label class="rating" for="rating1">&star;
                     <input type="radio" name="rating" id="rating1" value="1" required>
                 </label>
@@ -44,12 +47,12 @@
                 </label>
             </label>
             <label for="installDate">
-                Date of Installation
+                <p>Date of Installation:</p>
                 <input type="date" name="installDate" id="installDate" required>
             </label>
             <label class="features" for="features">
-                Which feature did you find useful in the product?
-                <p>(Check all that apply)</p>
+                <p>Which feature did you find useful in the product? <br>
+                    (Check all that apply)</p>
                 <label for="durability">
                     <input type="checkbox" name="features" id="durability" value="durability">
                     Durability
@@ -65,14 +68,16 @@
                 </label>
             </label>
             <label for="review">
-                Written Review:
+                <p>Written Review:</p>
                 <textarea name="review" id="review" cols="30" rows="10"></textarea>
             </label>
             <label for="name">
-                Your Name:
+                <p>Your Name:</p>
                 <input type="text" name="name" id="name">
             </label>
-            <button type="submit">Post Review</button>
+            <button type="submit">
+                <p>Post Review</p>
+            </button>
         </form>
     </main>
     <footer>

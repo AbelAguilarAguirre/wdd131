@@ -13,6 +13,10 @@
     font-family: var(--body-font);
 }
 
+body {
+    font-family: var(--body-font);
+}
+
 form {
     display: grid;
     gap: 20px;
@@ -22,7 +26,6 @@ form {
 }
 
 form label {
-    font-family: var(--header-font);
     color: var(--dark-1);
 }
 
@@ -70,14 +73,13 @@ form textarea {
     flex-flow: row wrap;
     justify-content: space-around;
 }
-.ratingBox h2 {
+.ratingBox p {
     margin: 0;
     width: 100%;
 }
 
 #prodName,
 #installDate {
-    font-family: var(--header-font);
     color: var(--dark-1);
     text-align: center;
     min-width: 200px;
