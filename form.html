@@ -22,14 +22,14 @@
     </header>
     <main>
         <form action="review.html" method="get">
+            <p>Product Name:</p>
             <label for="prodName">
-                <p>Product Name:</p>
                 <select name="prodName" id="prodName" required>
                     <option value="" disabled selected>Select a Product</option>
                 </select>
             </label>
-            <label class="ratingBox" for="rating">
-                <p>Overall Rating:</p>
+            <p>Overall Rating:</p>
+            <div class="ratingBox" for="rating">
                 <label class="rating" for="rating1">&star;
                     <input type="radio" name="rating" id="rating1" value="1" required>
                 </label>
@@ -45,9 +45,9 @@
                 <label class="rating" for="rating5">&star;&star;&star;&star;&star;
                     <input type="radio" name="rating" id="rating5" value="5" required>
                 </label>
-            </label>
+            </div>
+            <p>Date of Installation:</p>
             <label for="installDate">
-                <p>Date of Installation:</p>
                 <input type="date" name="installDate" id="installDate" required>
             </label>
 
@@ -65,8 +65,8 @@
                 <p>Written Review:</p>
                 <textarea name="review" id="review" cols="30" rows="10"></textarea>
             </label>
+            <p>Your Name:</p>
             <label for="name">
-                <p>Your Name:</p>
                 <input type="text" name="name" id="name">
             </label>
             <button type="submit">

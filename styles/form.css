@@ -23,23 +23,11 @@ form {
     box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1);
     margin: 0 auto;
     width: 80%;
-
+    display: grid;
+    gap: 20px;
     margin-top: 20px;
     background-color: white;
     max-width: 800px;
-}
-
-form label {
-    font-weight: 700;
-    font-size: 1.2rem;
-    margin: 0;
-    padding: 0;
-    display: block;
-}
-
-form input[type="checkbox"] {
-    width: 20px;
-    height: 20px;
 }
 
 form input[type="text"],
@@ -109,7 +97,6 @@ button {
     border: none;
     border-radius: 5px;
     cursor: pointer;
-    width: 50%;
     margin: 0 auto;
     min-width: 200px;
     transition: ease-in-out 0.3s;
