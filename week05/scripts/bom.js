@@ -24,10 +24,10 @@ function displayList(item) {
     li.append(deleteButton);
     list.append(li);
     deleteButton.addEventListener('click', () => {
+        deleteChapter(li.textContent);
         list.removeChild(li);
         input.focus();
     });
-
 }
 
 function setChapterList() {

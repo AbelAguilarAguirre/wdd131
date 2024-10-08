@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WDD 131 - Dynamic Web Fundamentals - Abel Antonio Ulysses Aguilar Aguirre</title>
+    <link rel="stylesheet" type="text/css" href="styles/form.css">
+    <meta name="description"
+        content="This is the fifth week project for WDD 131 - Dynamic Web Fundamentals by Abel Antonio Ulysses Aguilar Aguirre. This page will be the Product Review Form.">
+    <meta name="author" content="Abel Antonio Ulysses Aguilar Aguirre">
+    <script src="scripts/form.js" defer></script>
+    <script src="scripts/getdates.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <h1>Product Review</h1>
+    </header>
+    <main>
+        <form action="review.html" method="get">
+            <label for="prodName">
+                <h2>Product Name:</h2>
+                <select name="prodName" id="prodName" required>
+                    <option value="" disabled selected>Select a Product</option>
+                </select>
+            </label>
+            <label class="ratingBox" for="rating">
+                <h2>Overall Rating:</h2>
+                <label class="rating" for="rating1">&star;
+                    <input type="radio" name="rating" id="rating1" value="1" required>
+                </label>
+                <label class="rating" for="rating2">&star;&star;
+                    <input type="radio" name="rating" id="rating2" value="2" required>
+                </label>
+                <label class="rating" for="rating3">&star;&star;&star;
+                    <input type="radio" name="rating" id="rating3" value="3" required>
+                </label>
+                <label class="rating" for="rating4">&star;&star;&star;&star;
+                    <input type="radio" name="rating" id="rating4" value="4" required>
+                </label>
+                <label class="rating" for="rating5">&star;&star;&star;&star;&star;
+                    <input type="radio" name="rating" id="rating5" value="5" required>
+                </label>
+            </label>
+            <label for="installDate">
+                <h2>Date of Installation</h2>
+                <input type="date" name="installDate" id="installDate" required>
+            </label>
+            <label class="features" for="features">
+                <h2>Which feature did you find useful in the product?</h2>
+                <p>(Check all that apply)</p>
+                <label for="durability">
+                    <input type="checkbox" name="features" id="durability" value="durability">
+                    Durability
+                </label>
+                <label for="ease"><input type="checkbox" name="features" id="ease" value="ease">
+                    Ease of Use
+                </label>
+                <label for="performance"><input type="checkbox" name="features" id="performance" value="performance">
+                    Performance
+                </label>
+                <label for="design"><input type="checkbox" name="features" id="design" value="design">
+                    Design
+                </label>
+            </label>
+            <label for="review">
+                <h2>Written Review:</h2>
+                <textarea name="review" id="review" cols="30" rows="10"></textarea>
+            </label>
+            <label for="name">
+                <h2>Your Name:</h2>
+                <input type="text" name="name" id="name">
+            </label>
+            <button type="submit">Post Review</button>
+        </form>
+    </main>
+    <footer>
+        <p>&copy;<span id="currentyear"></span> - Abel Antonio Ulysses Aguilar Aguirre - USA</p>
+        <p id="lastModified"></p>
+    </footer>
+</body>
+
+
+</html>
