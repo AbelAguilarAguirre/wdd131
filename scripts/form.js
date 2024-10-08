@@ -27,6 +27,11 @@ const products = [
 ];
 
 products.forEach(product => {
+    let splitName = product.name.toLowerCase().split(' ');
+    for (var i = 0; i < splitName.length; i++) {
+        splitName[i] = splitName[i].charAt(0).toUpperCase() + splitName[i].substring(1);
+    }
+    product.name = splitName.join(' ');
     displayProduct(product);
 });
 
