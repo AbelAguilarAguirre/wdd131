@@ -86,11 +86,12 @@ form textarea {
     min-width: 200px;
     margin: 0 auto;
     border-radius: 5px;
+    font-size: 1rem;
 }
 button p {
     padding: 10px;
 }
-button p,
+
 button {
     background-color: var(--dark-2);
     color: var(--dark-1);
@@ -101,6 +102,8 @@ button {
     min-width: 200px;
     transition: ease-in-out 0.3s;
     height: 50px;
+    font-family: var(--body-font);
+    font-size: 1.2rem;
 }
 
 button:hover,
