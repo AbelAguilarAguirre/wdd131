@@ -1,0 +1,156 @@
+:root {
+    --dark-1: #0b4657;
+    --light-1: #f9ea60;
+    --dark-2: #832161;
+    --light-2: #5c9eb7;
+    --white: #f8dde4;
+
+    --header-font: "Delicious Handrawn", cursive;
+    --body-font: "Sono", sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: var(--body-font);
+    background-color: var(--white);
+}
+
+/* HEADER */
+
+header {
+    background-color: var(--dark-1);
+    padding: 20px;
+}
+
+header h1 {
+    color: var(--light-1);
+    text-align: center;
+    padding: 1rem;
+}
+
+header h2 {
+    color: var(--white);
+    text-align: center;
+}
+
+/* MAIN */
+main {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 5px;
+    padding-bottom: 20px;
+    margin: 0px auto;
+    max-width: 800px;
+}
+main h2,
+main h3,
+main h4,
+main p,
+main table {
+    padding: 1rem 1rem 1rem 1rem;
+}
+
+hr {
+    border: 1px solid var(--dark-1);
+}
+
+/* TABLE */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    border: black 1px solid;
+}
+table th {
+    padding: 10px;
+    border: black 1px solid;
+}
+table td {
+    border: black 1px solid;
+    text-align: center;
+}
+.dark1 {
+    background-color: var(--dark-1);
+    color: var(--white);
+}
+.dark2 {
+    background-color: var(--dark-2);
+    color: var(--light-1);
+}
+.light1 {
+    background-color: var(--light-1);
+    color: var(--dark-1);
+}
+.light2 {
+    background-color: var(--light-2);
+    color: black;
+}
+.white {
+    background-color: var(--white);
+    color: var(--dark-1);
+}
+
+/* TEXT */
+
+h1,
+h2,
+h3 {
+    font-family: var(--header-font);
+    font-weight: 200;
+}
+
+h1 {
+    font-size: 2rem;
+    color: var(--dark-1);
+}
+
+h2 {
+    font-size: 1.8rem;
+    color: var(--dark-2);
+}
+
+h3 {
+    font-size: 1.5rem;
+    color: var(--dark-2);
+}
+
+p {
+    font-size: 1rem;
+    color: var(--dark-1);
+    width: 90%;
+    margin: 0 auto;
+}
+
+.heading {
+    font-family: var(--header-font);
+    font-size: 1.5rem;
+    font-weight: 100;
+}
+
+.paragraph {
+    font-family: var(--body-font);
+    font-size: 1rem;
+}
+
+/* IMAGE */
+img {
+    width: 90%;
+    height: auto;
+    max-width: 800px;
+    margin: 0 auto;
+}
+/* FOOTER */
+
+footer {
+    background-color: var(--dark-1);
+    padding: 20px;
+    text-align: center;
+}
+
+footer p {
+    color: var(--white);
+    font-size: 0.8rem;
+}
