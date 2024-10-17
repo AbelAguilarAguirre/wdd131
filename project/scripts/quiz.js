@@ -82,6 +82,8 @@ function showResult() {
     if (score === 3) {
         finalMessage.textContent = "Amazing! You’re a pineapple expert! Enjoy a 10% discount!";
         localStorage.setItem("discount", "true");
+        answerButtons.forEach(button => button.hidden = true);
+        questionElement.hidden = true;
     } else if (score === 2) {
         finalMessage.textContent = "Good job! You know quite a bit about pineapples.";
     } else {
