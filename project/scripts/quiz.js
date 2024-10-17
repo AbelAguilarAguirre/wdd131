@@ -57,9 +57,10 @@ function showQuestion() {
 function checkAnswer(isCorrect) {
     if (isCorrect) {
         score += 1;
-        feedbackElement.textContent = "Correct! " + quizData[currentQuestion].feedback;
+        scoreDisplay.textContent = score;
+        feedbackElement.textContent = `Correct! ${quizData[currentQuestion].feedback}`;
     } else {
-        feedbackElement.textContent = "Wrong! " + quizData[currentQuestion].feedback;
+        feedbackElement.textContent = `Wrong! ${quizData[currentQuestion].feedback}`;
     }
     feedbackElement.classList.remove('hidden');
 
