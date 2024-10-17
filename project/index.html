@@ -15,13 +15,11 @@
     <link rel="stylesheet" href="styles/base.css">
     <script src="scripts/getdates.js" defer></script>
     <script src="scripts/hamburger.js" defer></script>
+    <script src="scripts/quiz.js" defer></script>
 </head>
 
 <body>
     <header class="header-box">
-        <a href="https://abelaguilaraguirre.github.io/wdd131/project/index.html">
-            <h1>Pineapple Paradise</h1>
-        </a>
         <nav>
             <ul class="navigation">
                 <li><a class="ham" href="#" onclick="myFunction(this)">
@@ -34,12 +32,65 @@
                 </li>
                 <li><a class="currentpage"
                         href="https://abelaguilaraguirre.github.io/wdd131/project/index.html">Home</a></li>
+                <li><a href="https://abelaguilaraguirre.github.io/wdd131/project/recipes.html">Recipes</a></li>
                 <li><a href="https://abelaguilaraguirre.github.io/wdd131/project/about-us.html">About Us</a></li>
                 <li><a href="https://abelaguilaraguirre.github.io/wdd131/project/contact-us.html">Contact Us</a></li>
             </ul>
         </nav>
+        <a href="https://abelaguilaraguirre.github.io/wdd131/project/index.html">
+            <h1>Pineapple Paradise</h1>
+        </a>
     </header>
     <main>
+        <section class="hero">
+            <h2>Welcome to Pineapple Paradise</h2>
+            <p>Where the sun is always shining and the pineapples are always sweet!</p>
+            <picture>
+                <source media="(min-width: 1000px)" srcset="/project/images/pinapple-hero-desktop.webp">
+                <img class="heroimg" src="/project/images/pinapple-hero-mobile.webp" alt="Pineapple Paradise">
+            </picture>
+            <a href="https://abelaguilaraguirre.github.io/wdd131/project/contact-us.html">
+                <h2 class="call">Get in Contact With Us!</h2>
+            </a>
+        </section>
+        <section class="content">
+            <h2>Our Mission</h2>
+            <p>Our mission is to provide the best pineapples in the world. We strive to provide the sweetest, juiciest,
+                and most delicious pineapples you have ever tasted. We are dedicated to providing the highest quality
+                pineapples to our customers and ensuring that they are always satisfied with their purchase.</p>
+            <a href="https://abelaguilaraguirre.github.io/wdd131/project/contact-us.html">
+                <h2 class="call">Learn More About Us!</h2>
+            </a>
+            <picture>
+                <source media="(min-width: 1000px)" srcset="/project/images/pinapple-hero-mobile.webp">
+                <img class="heroimg" src="/project/images/pinapple-home.webp" alt="Pineapple Paradise">
+            </picture>
+        </section>
+        <section class="content">
+            <h2>Our Pineapples</h2>
+            <p>Our pineapples are grown in the lush tropical climate of Hawaii. We take great care in cultivating our
+                pineapples to ensure that they are of the highest quality. Our pineapples are handpicked and packed with
+                care to ensure that they arrive at your door fresh and ready to eat.</p>
+            <a href="https://abelaguilaraguirre.github.io/wdd131/project/contact-us.html">
+                <h2 class="call">Click Here For Amazing Ways to Use Our Pineapples</h2>
+            </a>
+        </section>
+        <section class="content">
+            <h2>Pineapple Knowledge Quiz</h2>
+            <div id="quiz">
+                <p id="question"></p>
+                <button class="answer" id="answer1"></button>
+                <button class="answer" id="answer2"></button>
+                <button class="answer" id="answer3"></button>
+
+                <p class="hidden" id="feedback"></p>
+            </div>
+
+            <div id="result" class="hidden">
+                <h2>Your Score: <span id="score">0</span></h2>
+                <p id="final-message"></p>
+            </div>
+        </section>
 
     </main>
     <footer>
