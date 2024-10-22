@@ -41,10 +41,28 @@ function displayProduct(product) {
     productName.value = product.id;
     document.querySelector('#prodName').append(productName);
 }
-// Use localStorage to keep track of the number of reviews completed by the user client by adding a counter to the form submission review.html page. Every time that page is loaded successfully upon form submission, add one to the counter.
 
-let reviewCounter = localStorage.getItem('reviewCounter') || 0;
-document.querySelector('form').addEventListener('submit', () => {
-    reviewCounter++;
-    localStorage.setItem('reviewCounter', reviewCounter);
+document.addEventListener('DOMContentLoaded', () => {
+    const reviewForm = document.getElementById('reviewForm');
+    const reviewCountElement = document.getElementById('reviewCount');
+
+    function updateReviewCount() {
+        const reviewCount = localStorage.getItem('reviewCount') || 0;
+        reviewCountElement.textContent = `Total Reviews: ${reviewCount}`;
+    }
+
+    updateReviewCount();
+
+    reviewForm.addEventListener('submit', (event) => {
+        event.preventDefault();
+
+        let reviewCount = localStorage.getItem('reviewCount') || 0;
+        reviewCount = parseInt(reviewCount) + 1;
+        localStorage.setItem('reviewCount', reviewCount);
+
+        updateReviewCount();
+
+        reviewForm.reset();
+        alert('Review submitted successfully!');
+    });
 });
