@@ -44,25 +44,11 @@ function displayProduct(product) {
 
 document.addEventListener('DOMContentLoaded', () => {
     const reviewForm = document.getElementById('reviewForm');
-    const reviewCountElement = document.getElementById('reviewCount');
 
-    function updateReviewCount() {
-        const reviewCount = localStorage.getItem('reviewCount') || 0;
-        reviewCountElement.textContent = `Total Reviews: ${reviewCount}`;
-    }
-
-    updateReviewCount();
-
-    reviewForm.addEventListener('submit', (event) => {
-        event.preventDefault();
+    reviewForm.addEventListener('submit', () => {
 
         let reviewCount = localStorage.getItem('reviewCount') || 0;
         reviewCount = parseInt(reviewCount) + 1;
         localStorage.setItem('reviewCount', reviewCount);
-
-        updateReviewCount();
-
-        reviewForm.reset();
-        alert('Review submitted successfully!');
     });
 });
