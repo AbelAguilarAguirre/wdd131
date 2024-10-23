@@ -79,6 +79,10 @@ form textarea {
     width: 100%;
 }
 
+.centeredText {
+    text-align: center;
+}
+
 #prodName,
 #installDate {
     color: var(--dark-1);
